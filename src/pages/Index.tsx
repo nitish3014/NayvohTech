@@ -9,16 +9,38 @@ import RevealOnScroll from "@/components/RevealOnScroll";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
+import Slider from "react-slick";
 import ToolCard from "@/components/ToolCard";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
 const Index = () => {
+  const sliderSettings = {
+    dots: false,
+    infinite: true,
+    speed: 5000, // longer transition for smooth continuous motion
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 0, // no delay between transitions
+    cssEase: "linear",
+    pauseOnHover: false,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
+
   return (
     <>
       <Helmet>
@@ -44,8 +66,7 @@ const Index = () => {
                   Our Services
                 </h2>
                 <p className="text-lg text-gray-600">
-                  We provide comprehensive solutions to modernize your
-                  infrastructure and streamline your development workflow.
+                  We provide comprehensive solutions to modernize your infrastructure and streamline your development workflow.
                 </p>
               </div>
             </RevealOnScroll>
@@ -75,60 +96,38 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Tools Section */}
-        <section className="py-16 md:py-24 bg-white">
+        {/* Tools Section with Attractive Gradient and 3D Cards */}
+        <section className="py-16 md:py-24 gradient-bg">
           <div className="container mx-auto px-4 md:px-6">
             <RevealOnScroll>
               <div className="text-center max-w-3xl mx-auto mb-12">
-                <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
                   DevOps Tools
                 </h2>
-                <p className="text-lg text-gray-600">
-                  Explore the industry-leading tools and technologies we
-                  utilize to power your digital transformation.
+                <p className="text-lg text-white/80">
+                  Explore the industry-leading tools and technologies we utilize to power your digital transformation.
                 </p>
               </div>
             </RevealOnScroll>
 
             <RevealOnScroll delay={100}>
               <div className="px-4 md:px-12 lg:px-20">
-                <Carousel
-                  className="w-full"
-                  opts={{
-                    loop: true,
-                    align: "start",
-                    skipSnaps: false,
-                    dragFree: true,
-                    autoplay: true,
-                    autoplaySpeed: 2000,
-                  }}
-                >
-                  <CarouselContent className="-ml-2 md:-ml-4">
-                    {tools.map((tool) => (
-                      <CarouselItem
-                        key={tool.id}
-                        className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3 xl:basis-1/4"
-                      >
-                        <div className="p-1">
-                          <ToolCard
-                            name={tool.name}
-                            description={tool.description}
-                            category={tool.category}
-                            iconType="react-icons"
-                          />
-                        </div>
-                      </CarouselItem>
-                    ))}
-                  </CarouselContent>
-                  <div className="flex justify-center mt-8 gap-4">
-                    <CarouselPrevious className="relative static left-auto right-auto mr-2" />
-                    <CarouselNext className="relative static right-auto left-auto" />
-                  </div>
-                </Carousel>
+                <Slider {...sliderSettings}>
+                  {tools.map((tool) => (
+                    <div key={tool.id} className="px-2">
+                      <ToolCard
+                        name={tool.name}
+                        description={tool.description}
+                        category={tool.category}
+                        iconType="react-icons"
+                      />
+                    </div>
+                  ))}
+                </Slider>
 
                 <div className="flex justify-center mt-12">
                   <Button asChild variant="outline" className="group">
-                    <Link to="/tools" className="flex items-center">
+                    <Link to="/tools" className="flex items-center text-white bg-gray-900 ">
                       <span>View All Tools</span>
                       <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                     </Link>
@@ -179,8 +178,7 @@ const Index = () => {
                           Expert Team
                         </h3>
                         <p className="text-gray-600">
-                          Our team of certified professionals brings years of
-                          experience in DevOps and cloud technologies.
+                          Our team of certified professionals brings years of experience in DevOps and cloud technologies.
                         </p>
                       </div>
                     </div>
@@ -194,8 +192,7 @@ const Index = () => {
                           Tailored Solutions
                         </h3>
                         <p className="text-gray-600">
-                          We create custom solutions specifically designed to
-                          meet your unique business requirements.
+                          We create custom solutions specifically designed to meet your unique business requirements.
                         </p>
                       </div>
                     </div>
@@ -209,19 +206,14 @@ const Index = () => {
                           24/7 Support
                         </h3>
                         <p className="text-gray-600">
-                          Our dedicated support team ensures your infrastructure
-                          runs smoothly around the clock.
+                          Our dedicated support team ensures your infrastructure runs smoothly around the clock.
                         </p>
                       </div>
                     </div>
                   </div>
 
                   <div className="mt-8">
-                    <Button
-                      asChild
-                      size="lg"
-                      className="bg-nayvoh-600 hover:bg-nayvoh-700"
-                    >
+                    <Button asChild size="lg" className="bg-nayvoh-600 hover:bg-nayvoh-700">
                       <Link to="/about">Learn More About Us</Link>
                     </Button>
                   </div>
@@ -240,25 +232,15 @@ const Index = () => {
                   Ready to Transform Your Infrastructure?
                 </h2>
                 <p className="text-xl text-white/80 mb-8">
-                  Let's discuss how Nayvoh Technologies can help optimize your
-                  development workflow and modernize your infrastructure.
+                  Let's discuss how Nayvoh Technologies can help optimize your development workflow and modernize your infrastructure.
                 </p>
                 <div className="flex flex-wrap justify-center gap-4">
-                  <Button
-                    asChild
-                    size="lg"
-                    className="bg-white text-nayvoh-700 hover:bg-gray-100"
-                  >
+                  <Button asChild size="lg" className="bg-white text-nayvoh-700 hover:bg-gray-100">
                     <Link to="/contact">
                       <span>Contact Us</span>
                     </Link>
                   </Button>
-                  <Button
-                    asChild
-                    size="lg"
-                    variant="outline"
-                    className="text-white bg-gray-900 hover:text-nayvoh-700 hover:border-white hover:bg-white"
-                  >
+                  <Button asChild size="lg" variant="outline" className="text-white bg-gray-900 hover:text-nayvoh-700 hover:border-white hover:bg-white">
                     <Link to="/services">
                       <span>Explore Services</span>
                     </Link>
