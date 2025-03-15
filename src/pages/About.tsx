@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import RevealOnScroll from "@/components/RevealOnScroll";
-import TeamMember from "@/components/TeamMember";
-import { team } from "@/constants/team";
+// import TeamMember from "@/components/TeamMember";
+// import { team } from "@/constants/team";
 import { Button } from "@/components/ui/button";
 import { CloudCog, Users, BarChart3, Target } from "lucide-react";
 import Navbar from "@/components/Navbar";
@@ -18,29 +18,33 @@ const About = () => {
           content="Learn more about Nayvoh Technologies, our journey, mission, vision, and the expert team behind our innovative DevOps and cloud solutions."
         />
       </Helmet>
-      
+
       <Navbar />
-      
+
       <main className="overflow-hidden">
-        {/* Header Section: Mimics the Tools page header */}
+        {/* Header Section */}
         <section className="py-20 bg-gradient-to-b from-nayvoh-900 to-nayvoh-800 text-white">
           <div className="container mx-auto px-4 md:px-6">
             <div className="max-w-3xl mx-auto text-center">
-              <h1 className="text-4xl md:text-5xl font-extrabold mb-6">About Nayvoh Technologies</h1>
+              <h1 className="text-4xl md:text-5xl font-extrabold mb-6">
+                About Nayvoh Technologies
+              </h1>
               <p className="text-xl text-white/80">
                 Our journey toward DevOps and cloud excellence.
               </p>
             </div>
           </div>
         </section>
-        
+
         {/* Company Overview */}
-        <section className="py-16 md:py-24 bg-white">
+        {/* <section className="py-16 md:py-24 bg-white">
           <div className="container mx-auto px-4 md:px-6">
             <div className="flex flex-col md:flex-row gap-12 items-center">
               <div className="md:w-1/2">
                 <RevealOnScroll>
-                  <h2 className="text-3xl md:text-4xl font-bold mb-6">Our Story</h2>
+                  <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                    Our Story
+                  </h2>
                   <p className="text-gray-600 mb-4">
                     Nayvoh Technologies was founded in 2018 by a team of passionate DevOps engineers and cloud architects with a shared vision: to help businesses leverage modern infrastructure and automation.
                   </p>
@@ -52,12 +56,12 @@ const About = () => {
                   </p>
                 </RevealOnScroll>
               </div>
-              
+
               <div className="md:w-1/2">
                 <RevealOnScroll delay={200}>
                   <div className="relative">
                     <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-nayvoh-600 rounded-lg blur opacity-30"></div>
-                    <div className="relative bg-white rounded-lg shadow-xl p-8">
+                    <div className="relative bg-white rounded-lg shadow-md p-8">
                       <div className="grid grid-cols-2 gap-6">
                         <div className="text-center p-6 bg-gray-50 rounded-lg">
                           <div className="w-12 h-12 bg-nayvoh-100 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -90,69 +94,69 @@ const About = () => {
               </div>
             </div>
           </div>
-        </section>
-        
+        </section> */}
+
         {/* Mission & Vision */}
-        <section className="py-16 md:py-24 bg-gray-50">
+        <section className="py-16 md:py-24 bg-gray-50 relative">
           <div className="container mx-auto px-4 md:px-6">
-            <div className="text-center max-w-3xl mx-auto mb-16">
-              <RevealOnScroll>
-                <h2 className="text-3xl md:text-4xl font-bold mb-6">Mission & Vision</h2>
-              </RevealOnScroll>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-              <RevealOnScroll>
-                <div className="bg-white p-8 rounded-lg shadow-md">
-                  <div className="w-16 h-16 bg-nayvoh-100 rounded-full flex items-center justify-center mb-6">
-                    <span className="text-2xl font-bold text-nayvoh-600">M</span>
-                  </div>
-                  <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
-                  <p className="text-gray-600">
-                    To empower organizations with innovative DevOps and cloud solutions that drive growth, efficiency, and technological advancement. We simplify complex infrastructure challenges to pave the way for your success.
-                  </p>
-                </div>
-              </RevealOnScroll>
-              <RevealOnScroll delay={200}>
-                <div className="bg-white p-8 rounded-lg shadow-md">
-                  <div className="w-16 h-16 bg-nayvoh-100 rounded-full flex items-center justify-center mb-6">
-                    <span className="text-2xl font-bold text-nayvoh-600">V</span>
-                  </div>
+            <RevealOnScroll>
+              <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+                Mission & Vision
+              </h2>
+            </RevealOnScroll>
+
+            {/* Vision Card: Illustration on right, Text on Left */}
+            <div className="flex flex-col md:flex-row items-center mb-16">
+              {/* Text block on Left */}
+              <div className="md:w-1/2 relative pr-6 md:pr-12">
+                {/* Vertical line on the right side for Vision */}
+                <span className="hidden md:block absolute top-0 right-0 w-[2px] h-full bg-nayvoh-600"></span>
+                <RevealOnScroll>
                   <h3 className="text-2xl font-bold mb-4">Our Vision</h3>
-                  <p className="text-gray-600">
-                    To be the leading provider of transformative DevOps and cloud solutions, recognized globally for our technical excellence, innovation, and client-centric approach.
-                  </p>
-                </div>
-              </RevealOnScroll>
-            </div>
-          </div>
-        </section>
-        
-        {/* Team Section */}
-        <section className="py-16 md:py-24 bg-white">
-          <div className="container mx-auto px-4 md:px-6">
-            <div className="text-center max-w-3xl mx-auto mb-16">
-              <RevealOnScroll>
-                <h2 className="text-3xl md:text-4xl font-bold mb-6">Our Team</h2>
-                <p className="text-gray-600">
-                  Meet the passionate experts behind Nayvoh Technologies who bring years of experience in cloud architecture, DevOps, and software engineering.
-                </p>
-              </RevealOnScroll>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {team.map((member, index) => (
-                <RevealOnScroll key={member.id} delay={100 * index}>
-                  <TeamMember
-                    name={member.name}
-                    role={member.role}
-                    bio={member.bio}
-                    image={member.image}
-                  />
+                  <div className="relative bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                    <p className="text-gray-600 mt-8">
+                      Pioneering a new era in tech with disruptive DevOps and cloud innovations that empower agile transformations and drive industry-wide excellence.
+                    </p>
+                  </div>
                 </RevealOnScroll>
-              ))}
+              </div>
+              {/* Illustration on Right */}
+              <div className="md:w-1/2 flex justify-center">
+                <img
+                  src="../../public/images/mission_vision/vision.svg"
+                  alt="Vision Illustration"
+                  className="max-w-full h-auto object-cover"
+                />
+              </div>
+            </div>
+
+            {/* Mission Card: Illustration on Left, Text on Right */}
+            <div className="flex flex-col md:flex-row items-center">
+              {/* Illustration on Left */}
+              <div className="md:w-1/2 flex justify-center">
+                <img
+                  src="/images/mission_vision/mission.svg"
+                  alt="Mission Illustration"
+                  className="max-w-full h-auto object-cover"
+                />
+              </div>
+              {/* Text block on Right */}
+              <div className="md:w-1/2 relative pl-6 md:pl-12">
+                {/* Vertical line on the left side for Mission */}
+                <span className="hidden md:block absolute top-0 left-0 w-[2px] h-full bg-nayvoh-600"></span>
+                <RevealOnScroll>
+                  <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
+                  <div className="relative bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                    <p className="text-gray-600 mt-8">
+                      Accelerating digital evolution with state-of-the-art, resilient DevOps and cloud strategies that simplify complexity, optimize performance, and propel businesses into the future.
+                    </p>
+                  </div>
+                </RevealOnScroll>
+              </div>
             </div>
           </div>
         </section>
-        
+
         {/* CTA Section */}
         <section className="py-16 md:py-20 gradient-bg">
           <div className="container mx-auto px-4 md:px-6 text-center">
@@ -170,7 +174,7 @@ const About = () => {
           </div>
         </section>
       </main>
-      
+
       <Footer />
     </>
   );

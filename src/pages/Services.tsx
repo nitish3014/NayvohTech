@@ -219,7 +219,7 @@ const Services = () => {
                 <Button asChild size="lg" className="bg-white text-nayvoh-700 hover:bg-gray-100">
                   <Link to="/contact">Schedule a Consultation</Link>
                 </Button>
-                <Button asChild size="lg" variant="outline" className="text-white border-white hover:bg-white/10">
+                <Button asChild size="lg" variant="outline" className="text-white bg-gray-900 hover:text-nayvoh-700 hover:border-white hover:bg-white">
                   <Link to="/tools">Explore Our Tools</Link>
                 </Button>
               </div>

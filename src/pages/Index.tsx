@@ -145,7 +145,7 @@ const Index = () => {
               <div className="lg:w-1/2">
                 <RevealOnScroll>
                   <div className="relative rounded-lg overflow-hidden shadow-xl">
-                    <div className="absolute inset-0 bg-gradient-to-br from-nayvoh-600 to-nayvoh-800 opacity-90 mix-blend-multiply"></div>
+                    <div className="absolute inset-0 bg-gradient-to-b from-nayvoh-900 to-nayvoh-800 text-white  mix-blend-multiply"></div>
                     <img
                       src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6"
                       alt="DevOps Engineering"
@@ -235,7 +235,7 @@ const Index = () => {
                   Let's discuss how Nayvoh Technologies can help optimize your development workflow and modernize your infrastructure.
                 </p>
                 <div className="flex flex-wrap justify-center gap-4">
-                  <Button asChild size="lg" className="bg-white text-nayvoh-700 hover:bg-gray-100">
+                  <Button asChild size="lg" className="bg-white text-nayvoh-700 hover:bg-gray-100 hover:shadow-md">
                     <Link to="/contact">
                       <span>Contact Us</span>
                     </Link>
