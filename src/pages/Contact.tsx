@@ -4,10 +4,19 @@ import RevealOnScroll from "@/components/RevealOnScroll";
 import ContactForm from "@/components/ContactForm";
 import { Mail, Phone, MapPin, Clock, Github, Linkedin, Twitter, Instagram } from "lucide-react";
 import Navbar from "@/components/Navbar";
+import { Helmet } from "react-helmet";
 
 const Contact = () => {
   return (
     <>
+
+      <Helmet>
+        <title>Contact Nayvoh Technologies | DevOps & Cloud Solutions</title>
+        <meta
+          name="description"
+          content=" Contact Nayvoh Technologies for innovative DevOps and cloud solutions."
+        />
+      </Helmet>
     <Navbar />
 
     <div className="pt-16 min-h-screen">
@@ -127,15 +136,22 @@ const Contact = () => {
         <div className="container mx-auto px-4 md:px-6">
           <RevealOnScroll>
             <h2 className="text-3xl font-bold mb-8 text-center">Find Us</h2>
-            <div className="aspect-video w-full bg-gray-200 rounded-lg overflow-hidden shadow-md">
-              {/* Replace with actual map or iframe */}
-              <div className="w-full h-full flex items-center justify-center bg-gray-300">
-                <p className="text-gray-600">Interactive Map Placeholder</p>
-              </div>
+            <div className="aspect-video w-full rounded-lg overflow-hidden shadow-md">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d58250.521025016555!2d72.9972722!3d19.1852513!3m2!1i1024!2i768!4f13.1!2m1!1swagle%20estate%20padwal%20nagar%20thane%20pincode!5e1!3m2!1sen!2sin!4v1742031590630!5m2!1sen!2sin"
+                width="600"
+                height="450"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="w-full h-full"
+              ></iframe>
             </div>
           </RevealOnScroll>
         </div>
       </section>
+
       
       {/* FAQ Section */}
       <section className="py-16 md:py-24 bg-white">

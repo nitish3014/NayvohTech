@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import RevealOnScroll from "@/components/RevealOnScroll";
-// import TeamMember from "@/components/TeamMember";
-// import { team } from "@/constants/team";
+import TeamMember from "@/components/TeamMember";
+import { team } from "@/constants/team";
 import { Button } from "@/components/ui/button";
 import { CloudCog, Users, BarChart3, Target } from "lucide-react";
 import Navbar from "@/components/Navbar";
@@ -37,16 +37,16 @@ const About = () => {
         </section>
 
         {/* Company Overview */}
-        {/* <section className="py-16 md:py-24 bg-white">
+        <section className="py-16 md:py-24 bg-white">
           <div className="container mx-auto px-4 md:px-6">
             <div className="flex flex-col md:flex-row gap-12 items-center">
               <div className="md:w-1/2">
                 <RevealOnScroll>
                   <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                    Our Story
+                    About Us
                   </h2>
                   <p className="text-gray-600 mb-4">
-                    Nayvoh Technologies was founded in 2018 by a team of passionate DevOps engineers and cloud architects with a shared vision: to help businesses leverage modern infrastructure and automation.
+                    Nayvoh Technologies was founded in 2025 by a team of passionate DevOps engineers and cloud architects with a shared vision: to help businesses leverage modern infrastructure and automation.
                   </p>
                   <p className="text-gray-600 mb-4">
                     We recognized that many organizations struggle with the complexity of cloud technologies and microservices. Our mission became clear: simplify these complexities and empower businesses to focus on what matters most.
@@ -94,7 +94,7 @@ const About = () => {
               </div>
             </div>
           </div>
-        </section> */}
+        </section>
 
         {/* Mission & Vision */}
         <section className="py-16 md:py-24 bg-gray-50 relative">
@@ -110,9 +110,9 @@ const About = () => {
               {/* Text block on Left */}
               <div className="md:w-1/2 relative pr-6 md:pr-12">
                 {/* Vertical line on the right side for Vision */}
-                <span className="hidden md:block absolute top-0 right-0 w-[2px] h-full bg-nayvoh-600"></span>
+                <span className="hidden md:block absolute top-0 right-0 w-[8px] h-full bg-nayvoh-600"></span>
                 <RevealOnScroll>
-                  <h3 className="text-2xl font-bold mb-4">Our Vision</h3>
+                  <h3 className="text-6xl font-bold mb-4">Our Vision</h3>
                   <div className="relative bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
                     <p className="text-gray-600 mt-8">
                       Pioneering a new era in tech with disruptive DevOps and cloud innovations that empower agile transformations and drive industry-wide excellence.
@@ -123,9 +123,9 @@ const About = () => {
               {/* Illustration on Right */}
               <div className="md:w-1/2 flex justify-center">
                 <img
-                  src="../../public/images/mission_vision/vision.svg"
+                  src="/images/mission_vission/vision.svg"
                   alt="Vision Illustration"
-                  className="max-w-full h-auto object-cover"
+                  className="w-2/3 h-auto object-cover"
                 />
               </div>
             </div>
@@ -135,17 +135,17 @@ const About = () => {
               {/* Illustration on Left */}
               <div className="md:w-1/2 flex justify-center">
                 <img
-                  src="/images/mission_vision/mission.svg"
+                  src="/images/mission_vission/mission.svg"
                   alt="Mission Illustration"
-                  className="max-w-full h-auto object-cover"
+                  className="w-2/3 h-auto object-cover"
                 />
               </div>
               {/* Text block on Right */}
               <div className="md:w-1/2 relative pl-6 md:pl-12">
                 {/* Vertical line on the left side for Mission */}
-                <span className="hidden md:block absolute top-0 left-0 w-[2px] h-full bg-nayvoh-600"></span>
+                <span className="hidden md:block absolute top-0 left-0 w-[8px] h-full bg-nayvoh-600"></span>
                 <RevealOnScroll>
-                  <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
+                  <h3 className="text-6xl font-bold mb-4">Our Mission</h3>
                   <div className="relative bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
                     <p className="text-gray-600 mt-8">
                       Accelerating digital evolution with state-of-the-art, resilient DevOps and cloud strategies that simplify complexity, optimize performance, and propel businesses into the future.
