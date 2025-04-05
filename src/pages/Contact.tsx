@@ -7,50 +7,59 @@ import React, { useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+
 // Updated ContactForm with phone field and all fields mandatory
 const ContactForm = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    message: ''
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
   });
   const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    setFormData((prev) => ({
+      ...prev,
+      [e.target.name]: e.target.value,
+    }));
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     const { name, email, phone, message } = formData;
+  
     if (!name || !email || !phone || !message) {
       toast.error("All fields are required.");
       return;
     }
-    
-    console.log("Sending payload:", formData); // Debug log
-    
+  
     setLoading(true);
-
+  
     try {
-      const response = await fetch("https://contact-backend-one.vercel.app/send-email", {
+      const apiUrl = import.meta.env.VITE_API_URL || "https://nayvoh-tech-backend.vercel.app";
+      const response = await fetch(`${apiUrl}/send-email`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData)
+        body: JSON.stringify(formData),
       });
-
-      if (!response.ok) throw new Error("Failed to send email.");
-
+  
+      const result = await response.json();
+  
+      if (!response.ok) {
+        throw new Error(result.error || "Something went wrong");
+      }
+  
       toast.success("Email sent successfully!");
-      setFormData({ name: '', email: '', phone: '', message: '' });
+      setFormData({ name: "", email: "", phone: "", message: "" });
     } catch (error) {
-      console.error("Error occurred:", error.message);
-      toast.error("Failed to send email.");
+      console.error("Submit error:", error.message);
+      toast.error("Failed to send email. Please try again later.");
     } finally {
       setLoading(false);
     }
   };
+  
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
@@ -111,6 +120,7 @@ const ContactForm = () => {
     </form>
   );
 };
+
 
 const Contact = () => {
   return (
@@ -182,7 +192,7 @@ const Contact = () => {
                       <div>
                         <h3 className="text-lg font-semibold mb-1">Address</h3>
                         <address className="text-gray-600 not-italic">
-                          Padwal Nagar, Wagle Estate6<br />
+                          Padwal Nagar, Wagle Estate<br />
                           Thane- 400604 INDIA
                         </address>
                       </div>
