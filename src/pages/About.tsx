@@ -46,10 +46,7 @@ const About = () => {
                     About Us
                   </h2>
                   <p className="text-gray-600 mb-4">
-                    Nayvoh Technologies was founded in 2025 by a team of passionate DevOps engineers and cloud architects with a shared vision: to help businesses leverage modern infrastructure and automation.
-                  </p>
-                  <p className="text-gray-600 mb-4">
-                    We recognized that many organizations struggle with the complexity of cloud technologies and microservices. Our mission became clear: simplify these complexities and empower businesses to focus on what matters most.
+                  At Nayvoh Tech, we provide DevOps-driven cloud solutions with full-stack support, including UI/UX design, backend development, and data analysis. Our expert team automates processes, optimizes cloud infrastructure, and ensures secure, scalable operations. Focused on timely delivery and long-term performance, Nayvoh Tech is your trusted partner in digital transformation.
                   </p>
                   <p className="text-gray-600">
                     Today, we’re proud to have helped numerous organizations modernize their infrastructure and embrace a culture of continuous improvement.

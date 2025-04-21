@@ -49,11 +49,6 @@ const Navbar = () => {
           }>
             Home
           </NavLink>
-          <NavLink to="/about" className={({ isActive }) => 
-            `nav-link ${isActive ? 'active' : ''}`
-          }>
-            About
-          </NavLink>
           <NavLink to="/services" className={({ isActive }) => 
             `nav-link ${isActive ? 'active' : ''}`
           }>
@@ -62,13 +57,20 @@ const Navbar = () => {
           <NavLink to="/tools" className={({ isActive }) => 
             `nav-link ${isActive ? 'active' : ''}`
           }>
-            Tools
+            Resources
           </NavLink>
           <NavLink to="/contact" className={({ isActive }) => 
             `nav-link ${isActive ? 'active' : ''}`
           }>
             Contact
           </NavLink>
+          <NavLink to="/about" className={({ isActive }) => 
+            `nav-link ${isActive ? 'active' : ''}`
+          }>
+            About Us
+          </NavLink>
+
+
         </div>
 
         <div className="hidden md:block">
@@ -81,7 +83,7 @@ const Navbar = () => {
         <div className="md:hidden">
           <button
             onClick={toggleMenu}
-            className="text-gray-700 focus:outline-none"
+            className="text-gray-900 focus:outline-none"
             aria-label="Toggle menu"
           >
             {isMenuOpen ? (
@@ -109,17 +111,6 @@ const Navbar = () => {
               Home
             </NavLink>
             <NavLink
-              to="/about"
-              className={({ isActive }) => 
-                `block px-3 py-2 rounded-md text-base font-medium ${
-                  isActive ? "text-nayvoh-600 font-semibold" : "text-gray-700 hover:text-nayvoh-600"
-                }`
-              }
-              onClick={() => setIsMenuOpen(false)}
-            >
-              About
-            </NavLink>
-            <NavLink
               to="/services"
               className={({ isActive }) => 
                 `block px-3 py-2 rounded-md text-base font-medium ${
@@ -139,7 +130,7 @@ const Navbar = () => {
               }
               onClick={() => setIsMenuOpen(false)}
             >
-              Tools
+              Resources
             </NavLink>
             <NavLink
               to="/contact"
@@ -152,6 +143,20 @@ const Navbar = () => {
             >
               Contact
             </NavLink>
+            <NavLink
+              to="/about"
+              className={({ isActive }) => 
+                `block px-3 py-2 rounded-md text-base font-medium ${
+                  isActive ? "text-nayvoh-600 font-semibold" : "text-gray-700 hover:text-nayvoh-600"
+                }`
+              }
+              onClick={() => setIsMenuOpen(false)}
+            >
+              About Us
+            </NavLink>
+
+
+
             <Button className="bg-nayvoh-600 hover:bg-nayvoh-700 w-full">
               Get Started
             </Button>
