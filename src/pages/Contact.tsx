@@ -126,8 +126,8 @@ const Contact = () => {
   return (
     <>
       <Helmet>
-        <title>Contact Nayvoh Technologies | DevOps & Cloud Solutions</title>
-        <meta name="description" content="Contact Nayvoh Technologies for innovative DevOps and cloud solutions." />
+        <title>Contact Nayvoh Tech | DevOps & Cloud Solutions</title>
+        <meta name="description" content="Contact Nayvoh Tech for innovative DevOps and cloud solutions." />
       </Helmet>
       <Navbar />
 

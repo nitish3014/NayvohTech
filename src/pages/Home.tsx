@@ -58,7 +58,7 @@ const Home = () => {
             <div className="md:w-1/2">
               <RevealOnScroll>
                 <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                  Why Choose <span className="gradient-text">Nayvoh Technologies</span>
+                  Why Choose <span className="gradient-text">Nayvoh Tech</span>
                 </h2>
                 <p className="text-gray-600 mb-8">
                   We combine technical expertise with industry best practices to deliver reliable, scalable, and secure infrastructure solutions tailored to your needs.
@@ -94,7 +94,7 @@ const Home = () => {
                   <div className="relative bg-white rounded-lg shadow-xl p-8">
                     <div className="aspect-video bg-gray-100 rounded-md mb-6 overflow-hidden">
                       <div className="w-full h-full bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
-                        <span className="text-nayvoh-600 font-bold text-xl">Nayvoh Technologies</span>
+                        <span className="text-nayvoh-600 font-bold text-xl">Nayvoh Tech</span>
                       </div>
                     </div>
                     <div className="space-y-4">
@@ -119,7 +119,7 @@ const Home = () => {
               Ready to Transform Your Infrastructure?
             </h2>
             <p className="text-white/80 max-w-2xl mx-auto mb-8">
-              Let's discuss how Nayvoh Technologies can help you build scalable, secure, and efficient cloud solutions.
+              Let's discuss how Nayvoh Tech can help you build scalable, secure, and efficient cloud solutions.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Button asChild size="lg" className="bg-white text-nayvoh-700 hover:bg-gray-100">

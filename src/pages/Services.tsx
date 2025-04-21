@@ -12,7 +12,7 @@ const Services = () => {
   return (
     <>
       <Helmet>
-        <title>Our Services | Nayvoh Technologies</title>
+        <title>Our Services | Nayvoh Tech</title>
         <meta
           name="description"
           content="Comprehensive DevOps and cloud solutions to power your digital transformation. Explore our offerings in cloud migration, CI/CD pipelines, and infrastructure management."

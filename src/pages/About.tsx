@@ -12,10 +12,10 @@ const About = () => {
   return (
     <>
       <Helmet>
-        <title>About Nayvoh Technologies | DevOps & Cloud Solutions</title>
+        <title>About Nayvoh Tech | DevOps & Cloud Solutions</title>
         <meta
           name="description"
-          content="Learn more about Nayvoh Technologies, our journey, mission, vision, and the expert team behind our innovative DevOps and cloud solutions."
+          content="Learn more about Nayvoh Tech, our journey, mission, vision, and the expert team behind our innovative DevOps and cloud solutions."
         />
       </Helmet>
 
@@ -27,7 +27,7 @@ const About = () => {
           <div className="container mx-auto px-4 md:px-6">
             <div className="max-w-3xl mx-auto text-center">
               <h1 className="text-4xl md:text-5xl font-extrabold mb-6">
-                About Nayvoh Technologies
+                About Nayvoh Tech
               </h1>
               <p className="text-xl text-white/80">
                 Our journey toward DevOps and cloud excellence.

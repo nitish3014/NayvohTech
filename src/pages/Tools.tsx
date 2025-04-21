@@ -55,8 +55,8 @@ const Tools = () => {
   return (
     <>
       <Helmet>
-        <title>DevOps Tools | Nayvoh Technologies</title>
-        <meta name="description" content="Explore the cutting-edge tools and technologies used by Nayvoh Technologies for cloud infrastructure and DevOps solutions." />
+        <title>DevOps Tools | Nayvoh Tech</title>
+        <meta name="description" content="Explore the cutting-edge tools and technologies used by Nayvoh Tech for cloud infrastructure and DevOps solutions." />
       </Helmet>
       
       <Navbar />

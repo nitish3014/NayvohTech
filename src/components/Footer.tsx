@@ -17,7 +17,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 md:px-6 py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
-            <h2 className="text-xl font-bold mb-4">Nayvoh Technologies</h2>
+            <h2 className="text-xl font-bold mb-4">Nayvoh Tech</h2>
             <p className="text-gray-400 mb-4">
               A journey towards knowledge and growth in cloud technology and DevOps excellence.
             </p>
@@ -126,7 +126,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500">
-          <p>&copy; {new Date().getFullYear()} Nayvoh Technologies. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Nayvoh Tech. All rights reserved.</p>
         </div>
       </div>
     </footer>

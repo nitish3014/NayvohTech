@@ -44,10 +44,10 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Nayvoh Technologies | DevOps & Cloud Solutions</title>
+        <title>Nayvoh Tech | DevOps & Cloud Solutions</title>
         <meta
           name="description"
-          content="Nayvoh Technologies provides expert DevOps, cloud infrastructure, and microservices solutions for the modern software industry."
+          content="Nayvoh Tech provides expert DevOps, cloud infrastructure, and microservices solutions for the modern software industry."
         />
       </Helmet>
 
@@ -165,7 +165,7 @@ const Index = () => {
               <div className="lg:w-1/2">
                 <RevealOnScroll>
                   <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                    Why Choose Nayvoh Technologies?
+                    Why Choose Nayvoh Tech?
                   </h2>
 
                   <div className="space-y-6">
@@ -232,7 +232,7 @@ const Index = () => {
                   Ready to Transform Your Infrastructure?
                 </h2>
                 <p className="text-xl text-white/80 mb-8">
-                  Let's discuss how Nayvoh Technologies can help optimize your development workflow and modernize your infrastructure.
+                  Let's discuss how Nayvoh Tech can help optimize your development workflow and modernize your infrastructure.
                 </p>
                 <div className="flex flex-wrap justify-center gap-4">
                   <Button asChild size="lg" className="bg-white text-nayvoh-700 hover:bg-gray-100 hover:shadow-md">
