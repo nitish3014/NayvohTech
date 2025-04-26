@@ -412,8 +412,8 @@ const Index = () => {
             <RevealOnScroll delay={500}>
               <div className="flex justify-center mt-10">
                 <Button asChild variant="outline" className="group">
-                  <Link to="/solutions" className="flex items-center">
-                    Explore Our Solutions
+                  <Link to="/services" className="flex items-center">
+                    Explore Our Services
                     <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                   </Link>
                 </Button>
