@@ -222,7 +222,205 @@ const Index = () => {
             </div>
           </div>
         </section>
+{/* Problem statements in industry  */}
 
+{/* Optimized Problem Statements Section */}
+        <section className="py-14 bg-white">
+          <div className="container mx-auto px-4 md:px-6">
+            <RevealOnScroll>
+              <div className="text-center max-w-3xl mx-auto mb-10">
+                <h2 className="text-3xl font-bold mb-3">
+                  Industry Challenges We Solve
+                </h2>
+                <p className="text-gray-600">
+                  Modern software development faces complex challenges - we provide elegant solutions
+                </p>
+              </div>
+            </RevealOnScroll>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {/* Problem 1: Slow Pace Development */}
+              <RevealOnScroll delay={100}>
+                <div className="group relative overflow-hidden rounded-xl bg-gradient-to-br from-white to-gray-50 p-5 shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1 border border-gray-100">
+                  <div className="flex items-start mb-4">
+                    <div className="bg-nayvoh-100 text-nayvoh-700 rounded-lg p-2 mr-4">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="m12 10 2 4v3a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-3a8 8 0 1 0-16 0v3a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-3l2-4h4Z"/>
+                        <path d="M4.82 7.9 8 10"/>
+                        <path d="M15.18 7.9 12 10"/>
+                        <path d="M16.93 10H20a2 2 0 0 1 0 4H2"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-semibold text-gray-900">Slow Development Cycles</h3>
+                      <p className="text-gray-600 mt-1">
+                        Manual processes & large deployments create bottlenecks. We automate your workflow with CI/CD pipelines, enabling smaller & frequent releases.
+                      </p>
+                    </div>
+                  </div>
+                  <ul className="space-y-2 mt-3">
+                    <li className="flex items-start">
+                      <svg className="w-4 h-4 mt-0.5 mr-2 text-nayvoh-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                      </svg>
+                      <span className="text-gray-700">Automated testing and deployment</span>
+                    </li>
+                    <li className="flex items-start">
+                      <svg className="w-4 h-4 mt-0.5 mr-2 text-nayvoh-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                      </svg>
+                      <span className="text-gray-700">Microservices architecture</span>
+                    </li>
+                    <li className="flex items-start">
+                      <svg className="w-4 h-4 mt-0.5 mr-2 text-nayvoh-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                      </svg>
+                      <span className="text-gray-700">Infrastructure as Code</span>
+                    </li>
+                  </ul>
+                </div>
+              </RevealOnScroll>
+
+              {/* Problem 2: Security */}
+              <RevealOnScroll delay={200}>
+                <div className="group relative overflow-hidden rounded-xl bg-gradient-to-br from-white to-gray-50 p-5 shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1 border border-gray-100">
+                  <div className="flex items-start mb-4">
+                    <div className="bg-nayvoh-100 text-nayvoh-700 rounded-lg p-2 mr-4">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/>
+                        <path d="m9 12 2 2 4-4"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-semibold text-gray-900">Security Vulnerabilities</h3>
+                      <p className="text-gray-600 mt-1">
+                        Late-stage security fixes are costly and disruptive. Our DevSecOps approach integrates security throughout your entire development lifecycle.
+                      </p>
+                    </div>
+                  </div>
+                  <ul className="space-y-2 mt-3">
+                    <li className="flex items-start">
+                      <svg className="w-4 h-4 mt-0.5 mr-2 text-nayvoh-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                      </svg>
+                      <span className="text-gray-700">Automated vulnerability scanning</span>
+                    </li>
+                    <li className="flex items-start">
+                      <svg className="w-4 h-4 mt-0.5 mr-2 text-nayvoh-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                      </svg>
+                      <span className="text-gray-700">Compliance as code</span>
+                    </li>
+                    <li className="flex items-start">
+                      <svg className="w-4 h-4 mt-0.5 mr-2 text-nayvoh-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                      </svg>
+                      <span className="text-gray-700">Secrets management</span>
+                    </li>
+                  </ul>
+                </div>
+              </RevealOnScroll>
+
+              {/* Problem 3: Cloud Migration */}
+              <RevealOnScroll delay={300}>
+                <div className="group relative overflow-hidden rounded-xl bg-gradient-to-br from-white to-gray-50 p-5 shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1 border border-gray-100">
+                  <div className="flex items-start mb-4">
+                    <div className="bg-nayvoh-100 text-nayvoh-700 rounded-lg p-2 mr-4">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-semibold text-gray-900">Cloud Migration Complexities</h3>
+                      <p className="text-gray-600 mt-1">
+                        Legacy systems & operational challenges make cloud transitions difficult. Our cloud architects design smooth migration paths to your needs.
+                      </p>
+                    </div>
+                  </div>
+                  <ul className="space-y-2 mt-3">
+                    <li className="flex items-start">
+                      <svg className="w-4 h-4 mt-0.5 mr-2 text-nayvoh-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                      </svg>
+                      <span className="text-gray-700">Multi-cloud strategy</span>
+                    </li>
+                    <li className="flex items-start">
+                      <svg className="w-4 h-4 mt-0.5 mr-2 text-nayvoh-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                      </svg>
+                      <span className="text-gray-700">Cost optimization</span>
+                    </li>
+                    <li className="flex items-start">
+                      <svg className="w-4 h-4 mt-0.5 mr-2 text-nayvoh-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                      </svg>
+                      <span className="text-gray-700">Hybrid cloud solutions</span>
+                    </li>
+                  </ul>
+                </div>
+              </RevealOnScroll>
+
+              {/* Problem 4: Outdated Technology */}
+              <RevealOnScroll delay={400}>
+                <div className="group relative overflow-hidden rounded-xl bg-gradient-to-br from-white to-gray-50 p-5 shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1 border border-gray-100">
+                  <div className="flex items-start mb-4">
+                    <div className="bg-nayvoh-100 text-nayvoh-700 rounded-lg p-2 mr-4">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <rect x="4" y="4" width="16" height="16" rx="2"/>
+                        <rect x="9" y="9" width="6" height="6"/>
+                        <path d="M15 2v2"/>
+                        <path d="M15 20v2"/>
+                        <path d="M2 15h2"/>
+                        <path d="M2 9h2"/>
+                        <path d="M20 15h2"/>
+                        <path d="M20 9h2"/>
+                        <path d="M9 2v2"/>
+                        <path d="M9 20v2"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-semibold text-gray-900">Outdated Technology</h3>
+                      <p className="text-gray-600 mt-1">
+                        Aging tech stacks limit innovation and efficiency. We modernize your infrastructure with cutting-edge tools and methodologies.
+                      </p>
+                    </div>
+                  </div>
+                  <ul className="space-y-2 mt-3">
+                    <li className="flex items-start">
+                      <svg className="w-4 h-4 mt-0.5 mr-2 text-nayvoh-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                      </svg>
+                      <span className="text-gray-700">Containerization & orchestration</span>
+                    </li>
+                    <li className="flex items-start">
+                      <svg className="w-4 h-4 mt-0.5 mr-2 text-nayvoh-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                      </svg>
+                      <span className="text-gray-700">Serverless architectures</span>
+                    </li>
+                    <li className="flex items-start">
+                      <svg className="w-4 h-4 mt-0.5 mr-2 text-nayvoh-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                      </svg>
+                      <span className="text-gray-700">Observability platforms</span>
+                    </li>
+                  </ul>
+                </div>
+              </RevealOnScroll>
+            </div>
+
+            <RevealOnScroll delay={500}>
+              <div className="flex justify-center mt-10">
+                <Button asChild variant="outline" className="group">
+                  <Link to="/solutions" className="flex items-center">
+                    Explore Our Solutions
+                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  </Link>
+                </Button>
+              </div>
+            </RevealOnScroll>
+          </div>
+        </section>
         {/* CTA Section */}
         <section className="py-16 md:py-24 bg-nayvoh-900 text-white">
           <div className="container mx-auto px-4 md:px-6">
