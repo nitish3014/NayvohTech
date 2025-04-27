@@ -440,11 +440,22 @@ const Index = () => {
                       <span>Contact Us</span>
                     </Link>
                   </Button>
-                  <Button asChild size="lg" variant="outline" className="text-white bg-gray-900 hover:text-nayvoh-700 hover:border-white hover:bg-white">
-                    <Link to="/services">
-                      <span>Explore Services</span>
-                    </Link>
-                  </Button>
+                  <Button 
+                  asChild 
+                  size="lg" 
+                  variant="outline" 
+                  className="relative overflow-hidden text-gray-100 bg-gray-900 border-2 border-white transition-all duration-500 ease-in-out
+                    hover:text-white hover:bg-gradient-to-b hover:from-purple-800 hover:via-purple-800 hover:to-purple-900 hover:border-white
+                    before:absolute before:top-0 before:left-0 before:w-0 before:h-0 before:border-t-2 before:border-l-2 before:border-white before:transition-all before:duration-500 before:ease-in-out
+                    after:absolute after:bottom-0 after:right-0 after:w-0 after:h-0 after:border-b-2 after:border-r-2 after:border-white after:transition-all after:duration-500 after:ease-in-out
+                    hover:before:w-full hover:before:h-full hover:after:w-full hover:after:h-full
+                  "
+                >
+                  <Link to="/services">
+                  Explore Services
+                  </Link>
+                </Button>
+
                 </div>
               </RevealOnScroll>
             </div>
