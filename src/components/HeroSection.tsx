@@ -17,19 +17,19 @@ const HeroSection = () => {
           <div className="md:w-1/2 mb-8 md:mb-0 space-y-6">
             <RevealOnScroll>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight">
-                A Journey Towards Knowledge and Growth
+              Devops Driven Cloud solutions with Comprehensive Full-Stack Support
               </h1>
             </RevealOnScroll>
             
             <RevealOnScroll delay={200}>
               <p className="text-xl text-white/80 max-w-2xl mt-6">
-                Empowering businesses with cutting-edge DevOps, cloud infrastructure, and microservices solutions for the modern software industry.
+              At Nayvoh Tech, we help your business grow with smart DevOps and cloud solutions. Together, we’ll tackle challenges and create success every step of the way.
               </p>
             </RevealOnScroll>
             
             <RevealOnScroll delay={400}>
               <div className="flex flex-wrap gap-4 mt-8">
-                <Button asChild size="lg" className="bg-white text-nayvoh-700 hover:bg-gray-100">
+                <Button asChild size="lg" className="bg-white text-nayvoh-700 hover:bg-gray-200 hover:shadow-md">
                   <Link to="/services">
                     Explore Services
                   </Link>
