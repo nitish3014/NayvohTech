@@ -254,6 +254,90 @@ const Index = () => {
             </RevealOnScroll>
           </div>
         </section>
+        {/* Services Section */}
+        <section className="pt-12 pb-16 md:pt-16 md:pb-24 bg-gray-100 relative">
+          {/* Divider */}
+          <div className="absolute top-0 left-0 right-0 flex justify-center">
+            <div className="w-24 h-1 bg-nayvoh-600 rounded-full"></div>
+          </div>
+          <div className="container mx-auto px-4 md:px-6">
+            <RevealOnScroll>
+              <div className="text-center max-w-3xl mx-auto mb-12">
+                <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                  Our Services
+                </h2>
+                <p className="text-lg text-gray-600">
+                  We provide comprehensive solutions to modernize your infrastructure and streamline your development workflow.
+                </p>
+              </div>
+            </RevealOnScroll>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {services.slice(0, 6).map((service, index) => (
+                <RevealOnScroll key={service.id} delay={index * 100}>
+                  <ServiceCard
+                    title={service.title}
+                    description={service.description}
+                    icon={service.icon}
+                  />
+                </RevealOnScroll>
+              ))}
+            </div>
+
+            <RevealOnScroll delay={300}>
+              <div className="flex justify-center mt-12">
+                <Button asChild variant="outline" className="group">
+                  <Link to="/services" className="flex items-center">
+                    View All Services
+                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  </Link>
+                </Button>
+              </div>
+            </RevealOnScroll>
+          </div>
+        </section>
+        {/* Tools Section with Attractive Gradient and 3D Cards */}
+        <section className="py-16 md:py-24 gradient-bg">
+          <div className="container mx-auto px-4 md:px-6">
+            <RevealOnScroll>
+              <div className="text-center max-w-3xl mx-auto mb-12">
+                <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
+                  DevOps Tools
+                </h2>
+                <p className="text-lg text-white/80">
+                  Explore the industry-leading tools and technologies we utilize to power your digital transformation.
+                </p>
+              </div>
+            </RevealOnScroll>
+
+            <RevealOnScroll delay={100}>
+              <div className="px-4 md:px-12 lg:px-20">
+                <Slider {...sliderSettings}>
+                  {tools.map((tool) => (
+                    <div key={tool.id} className="px-2">
+                      <ToolCard
+                        name={tool.name}
+                        description={tool.description}
+                        category={tool.category}
+                        iconType="react-icons"
+                      />
+                    </div>
+                  ))}
+                </Slider>
+
+                <div className="flex justify-center mt-12">
+                  <Button asChild variant="outline" className="group">
+                    <Link to="/tools" className="flex items-center text-white bg-gray-900 ">
+                      <span>View All Tools</span>
+                      <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                    </Link>
+                  </Button>
+                </div>
+              </div>
+            </RevealOnScroll>
+          </div>
+        </section>
+
 
         {/* Why Choose Us Section */}
         <section className="py-16 md:py-24 bg-gray-50">
@@ -339,86 +423,6 @@ const Index = () => {
             </div>
           </div>
         </section>
-        {/* Tools Section with Attractive Gradient and 3D Cards */}
-        <section className="py-16 md:py-24 gradient-bg">
-          <div className="container mx-auto px-4 md:px-6">
-            <RevealOnScroll>
-              <div className="text-center max-w-3xl mx-auto mb-12">
-                <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
-                  DevOps Tools
-                </h2>
-                <p className="text-lg text-white/80">
-                  Explore the industry-leading tools and technologies we utilize to power your digital transformation.
-                </p>
-              </div>
-            </RevealOnScroll>
-
-            <RevealOnScroll delay={100}>
-              <div className="px-4 md:px-12 lg:px-20">
-                <Slider {...sliderSettings}>
-                  {tools.map((tool) => (
-                    <div key={tool.id} className="px-2">
-                      <ToolCard
-                        name={tool.name}
-                        description={tool.description}
-                        category={tool.category}
-                        iconType="react-icons"
-                      />
-                    </div>
-                  ))}
-                </Slider>
-
-                <div className="flex justify-center mt-12">
-                  <Button asChild variant="outline" className="group">
-                    <Link to="/tools" className="flex items-center text-white bg-gray-900 ">
-                      <span>View All Tools</span>
-                      <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                    </Link>
-                  </Button>
-                </div>
-              </div>
-            </RevealOnScroll>
-          </div>
-        </section>
-
-        {/* Services Section */}
-        <section className="py-16 md:py-24 bg-gray-50">
-          <div className="container mx-auto px-4 md:px-6">
-            <RevealOnScroll>
-              <div className="text-center max-w-3xl mx-auto mb-12">
-                <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                  Our Services
-                </h2>
-                <p className="text-lg text-gray-600">
-                  We provide comprehensive solutions to modernize your infrastructure and streamline your development workflow.
-                </p>
-              </div>
-            </RevealOnScroll>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {services.slice(0, 6).map((service, index) => (
-                <RevealOnScroll key={service.id} delay={index * 100}>
-                  <ServiceCard
-                    title={service.title}
-                    description={service.description}
-                    icon={service.icon}
-                  />
-                </RevealOnScroll>
-              ))}
-            </div>
-
-            <RevealOnScroll delay={300}>
-              <div className="flex justify-center mt-12">
-                <Button asChild variant="outline" className="group">
-                  <Link to="/services" className="flex items-center">
-                    View All Services
-                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                  </Link>
-                </Button>
-              </div>
-            </RevealOnScroll>
-          </div>
-        </section>
         {/* CTA Section */}
         <section className="py-16 md:py-24 bg-nayvoh-900 text-white">
           <div className="container mx-auto px-4 md:px-6">
@@ -446,6 +450,9 @@ const Index = () => {
             </div>
           </div>
         </section>
+
+
+
       </main>
 
       <Footer />
