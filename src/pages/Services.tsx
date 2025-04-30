@@ -164,7 +164,8 @@ const Services = () => {
                 </RevealOnScroll>
               </div>
 
-              <div className="md:w-1/2">
+              {/* Placeholder graphic - hidden on mobile, shown on md+ */}
+              <div className="hidden md:block md:w-1/2">
                 <RevealOnScroll delay={200}>
                   <div className="relative">
                     <div className="absolute -inset-1 bg-gradient-to-r from-nayvoh-600 to-purple-600 rounded-lg blur opacity-30"></div>

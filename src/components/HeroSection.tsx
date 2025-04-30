@@ -17,9 +17,10 @@ const HeroSection = () => {
           <div className="md:w-8/12 mb-8 md:mb-0 space-y-6">
           {/* headline */}
             <RevealOnScroll>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight">
-              Devops Driven Cloud Solutions With Comprehensive Full-Stack Support
-              </h1>
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold text-white mt-3">
+              <div className="block leading-[0.9] md:leading-[1.1]">Devops Driven Cloud Solutions With</div>
+              <div className="block leading-[0.9] md:leading-[1.1] mt-1 md:mt-2"> Comprehensive Full-Stack Support</div>
+            </h1>
             </RevealOnScroll>
             {/* title */}
             <RevealOnScroll delay={200}>
