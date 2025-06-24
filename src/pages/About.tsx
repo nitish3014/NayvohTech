@@ -17,6 +17,8 @@ const About = () => {
           name="description"
           content="Learn more about Nayvoh Tech, our journey, mission, vision, and the expert team behind our innovative DevOps and cloud solutions."
         />
+        <link rel="canonical" href="https://nayvohtech.com/about" />
+        <meta property="og:title" content="About Nayvoh Tech" />
       </Helmet>
 
       <Navbar />

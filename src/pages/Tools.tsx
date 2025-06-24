@@ -57,6 +57,7 @@ const Tools = () => {
       <Helmet>
         <title>DevOps Tools | Nayvoh Tech</title>
         <meta name="description" content="Explore the cutting-edge tools and technologies used by Nayvoh Tech for cloud infrastructure and DevOps solutions." />
+        <link rel="canonical" href="https://nayvohtech.com/tools" />
       </Helmet>
       
       <Navbar />

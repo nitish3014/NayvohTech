@@ -3,13 +3,14 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Helmet } from "react-helmet"; // Import Helmet for setting the canonical link
 import Index from "./pages/Index";
 import About from "./pages/About";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import Tools from "./pages/Tools";
 import NotFound from "./pages/NotFound";
-import ScrollToTop from "@/components/ScrollToTop"; // Add this import
+import ScrollToTop from "@/components/ScrollToTop";
 
 const queryClient = new QueryClient();
 
@@ -19,15 +20,77 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <ScrollToTop /> {/* Add this component here */}
+        <ScrollToTop />
+        <Helmet>
+          <link rel="canonical" href="https://nayvohtech.com/" /> {/* Default for the homepage */}
+        </Helmet>
         <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/tools" element={<Tools />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
+          <Route
+            path="/"
+            element={
+              <>
+                <Helmet>
+                  <link rel="canonical" href="https://nayvohtech.com/" />
+                </Helmet>
+                <Index />
+              </>
+            }
+          />
+          <Route
+            path="/about"
+            element={
+              <>
+                <Helmet>
+                  <link rel="canonical" href="https://nayvohtech.com/about" />
+                </Helmet>
+                <About />
+              </>
+            }
+          />
+          <Route
+            path="/services"
+            element={
+              <>
+                <Helmet>
+                  <link rel="canonical" href="https://nayvohtech.com/services" />
+                </Helmet>
+                <Services />
+              </>
+            }
+          />
+          <Route
+            path="/contact"
+            element={
+              <>
+                <Helmet>
+                  <link rel="canonical" href="https://nayvohtech.com/contact" />
+                </Helmet>
+                <Contact />
+              </>
+            }
+          />
+          <Route
+            path="/tools"
+            element={
+              <>
+                <Helmet>
+                  <link rel="canonical" href="https://nayvohtech.com/tools" />
+                </Helmet>
+                <Tools />
+              </>
+            }
+          />
+          <Route
+            path="*"
+            element={
+              <>
+                <Helmet>
+                  <link rel="canonical" href="https://nayvohtech.com/notfound" />
+                </Helmet>
+                <NotFound />
+              </>
+            }
+          />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>

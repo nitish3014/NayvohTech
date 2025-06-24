@@ -128,6 +128,7 @@ const Contact = () => {
       <Helmet>
         <title>Contact Nayvoh Tech | DevOps & Cloud Solutions</title>
         <meta name="description" content="Contact Nayvoh Tech for innovative DevOps and cloud solutions." />
+        <link rel="canonical" href="https://nayvohtech.com/contact" />
       </Helmet>
       <Navbar />
 
