@@ -70,11 +70,11 @@ const App = () => (
             }
           />
           <Route
-            path="/tools"
+            path="/resources"
             element={
               <>
                 <Helmet>
-                  <link rel="canonical" href="https://nayvohtech.com/tools" />
+                  <link rel="canonical" href="https://nayvohtech.com/resources" />
                 </Helmet>
                 <Tools />
               </>

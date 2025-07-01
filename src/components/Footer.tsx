@@ -56,8 +56,8 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/tools" className="text-gray-400 hover:text-white transition-colors flex items-center">
-                  <ArrowRight size={16} className="mr-2" /> Tools
+                <Link to="/resources" className="text-gray-400 hover:text-white transition-colors flex items-center">
+                  <ArrowRight size={16} className="mr-2" /> Resources
                 </Link>
               </li>
               <li>

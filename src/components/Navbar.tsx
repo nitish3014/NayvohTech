@@ -71,7 +71,7 @@ const Navbar = () => {
             Services
           </NavLink>
           <NavLink 
-            to="/tools" 
+            to="/resources" 
             className={({ isActive }) => 
               `px-4 py-2 rounded-md text-sm font-medium transition-colors ${
                 isActive 
@@ -79,7 +79,7 @@ const Navbar = () => {
                   : "text-gray-900 hover:text-nayvoh-600"
               }`
             }
-            onClick={() => handleNavigation("/tools")}
+            onClick={() => handleNavigation("/resources")}
           >
             Resources
           </NavLink>
@@ -163,13 +163,13 @@ const Navbar = () => {
               Services
             </NavLink>
             <NavLink
-              to="/tools"
+              to="/resources"
               className={({ isActive }) => 
                 `block px-3 py-2 rounded-md text-base font-medium ${
                   isActive ? "text-nayvoh-600 font-semibold" : "text-gray-900 hover:text-nayvoh-600"
                 }`
               }
-              onClick={() => handleNavigation("/tools")}
+              onClick={() => handleNavigation("/resources")}
             >
               Resources
             </NavLink>
