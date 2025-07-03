@@ -17,7 +17,7 @@ const Services = () => {
           name="description"
           content="Comprehensive DevOps and cloud solutions to power your digital transformation. Explore our offerings in cloud migration, CI/CD pipelines, and infrastructure management."
         />
-        <link rel="canonical" href="https://nayvohtech.com/services" />
+        <link rel="canonical" href="https://www.nayvohtech.com/services" />
         <meta property="og:title" content="Our Services | Nayvoh Tech" />
       </Helmet>
       
@@ -223,7 +223,7 @@ const Services = () => {
                   <Link to="/contact">Schedule a Consultation</Link>
                 </Button>
                 <Button asChild size="lg" variant="outline" className="text-white bg-gray-900 hover:text-nayvoh-700 hover:border-white hover:bg-white">
-                  <Link to="/tools">Explore Our Tools</Link>
+                  <Link to="/resources">Explore Our Resources</Link>
                 </Button>
               </div>
             </RevealOnScroll>

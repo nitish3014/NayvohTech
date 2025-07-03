@@ -22,7 +22,7 @@ const App = () => (
       <BrowserRouter>
         <ScrollToTop />
         <Helmet>
-          <link rel="canonical" href="https://nayvohtech.com/" /> {/* Default for the homepage */}
+          <link rel="canonical" href="https://www.nayvohtech.com/" /> {/* Default for the homepage */}
         </Helmet>
         <Routes>
           <Route
@@ -30,7 +30,7 @@ const App = () => (
             element={
               <>
                 <Helmet>
-                  <link rel="canonical" href="https://nayvohtech.com/" />
+                  <link rel="canonical" href="https://www.nayvohtech.com/" />
                 </Helmet>
                 <Index />
               </>
@@ -41,7 +41,7 @@ const App = () => (
             element={
               <>
                 <Helmet>
-                  <link rel="canonical" href="https://nayvohtech.com/about" />
+                  <link rel="canonical" href="https://www.nayvohtech.com/about" />
                 </Helmet>
                 <About />
               </>
@@ -52,7 +52,7 @@ const App = () => (
             element={
               <>
                 <Helmet>
-                  <link rel="canonical" href="https://nayvohtech.com/services" />
+                  <link rel="canonical" href="https://www.nayvohtech.com/services" />
                 </Helmet>
                 <Services />
               </>
@@ -63,7 +63,7 @@ const App = () => (
             element={
               <>
                 <Helmet>
-                  <link rel="canonical" href="https://nayvohtech.com/contact" />
+                  <link rel="canonical" href="https://www.nayvohtech.com/contact" />
                 </Helmet>
                 <Contact />
               </>
@@ -74,7 +74,7 @@ const App = () => (
             element={
               <>
                 <Helmet>
-                  <link rel="canonical" href="https://nayvohtech.com/resources" />
+                  <link rel="canonical" href="https://www.nayvohtech.com/resources" />
                 </Helmet>
                 <Tools />
               </>
@@ -85,7 +85,7 @@ const App = () => (
             element={
               <>
                 <Helmet>
-                  <link rel="canonical" href="https://nayvohtech.com/notfound" />
+                  <link rel="canonical" href="https://www.nayvohtech.com/notfound" />
                 </Helmet>
                 <NotFound />
               </>

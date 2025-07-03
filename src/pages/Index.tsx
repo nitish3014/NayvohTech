@@ -49,7 +49,7 @@ const Index = () => {
           name="description"
           content="Nayvoh Tech provides expert DevOps, cloud infrastructure, and microservices solutions for the modern software industry."
         />
-        <link rel="canonical" href="https://nayvohtech.com/" />
+        <link rel="canonical" href="https://www.nayvohtech.com/" />
       </Helmet>
 
       <Navbar />
@@ -328,8 +328,8 @@ const Index = () => {
 
                 <div className="flex justify-center mt-12">
                   <Button asChild variant="outline" className="group">
-                    <Link to="/tools" className="flex items-center text-white bg-gray-900 ">
-                      <span>View All Tools</span>
+                    <Link to="/resources" className="flex items-center text-white bg-gray-900 ">
+                      <span>View All Resources</span>
                       <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                     </Link>
                   </Button>
