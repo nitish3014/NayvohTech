@@ -17,7 +17,7 @@ const Services = () => {
           name="description"
           content="Comprehensive DevOps and cloud solutions to power your digital transformation. Explore our offerings in cloud migration, CI/CD pipelines, and infrastructure management."
         />
-        <link rel="canonical" href="https://www.nayvohtech.com/services" />
+        <link rel="canonical" href="https://nayvohtech.com/services" />
         <meta property="og:title" content="Our Services | Nayvoh Tech" />
       </Helmet>
       

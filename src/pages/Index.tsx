@@ -49,7 +49,7 @@ const Index = () => {
           name="description"
           content="Nayvoh Tech provides expert DevOps, cloud infrastructure, and microservices solutions for the modern software industry."
         />
-        <link rel="canonical" href="https://www.nayvohtech.com/" />
+        <link rel="canonical" href="https://nayvohtech.com/" />
       </Helmet>
 
       <Navbar />
