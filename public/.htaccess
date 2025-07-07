@@ -1,5 +1,10 @@
 <IfModule mod_rewrite.c>
   RewriteEngine On
+
+  # Redirect www to non-www
+  RewriteCond %{HTTP_HOST} ^www\.nayvohtech\.com$ [NC]
+  RewriteRule ^(.*)$ https://nayvohtech.com/$1 [L,R=301]
+
   RewriteBase /
 
   RewriteCond %{REQUEST_FILENAME} -f [OR]
