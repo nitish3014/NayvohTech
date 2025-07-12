@@ -22,6 +22,11 @@ const App = () => (
       <BrowserRouter>
         <ScrollToTop />
         <Helmet>
+          <meta name="robots" content="index, follow" />
+          <meta name="description" content="Nayvoh Tech provides expert DevOps, cloud infrastructure, and microservices solutions for the modern software industry." />
+          <meta name="keywords" content="DevOps, cloud infrastructure, microservices, software industry" />
+          <meta name="author" content="Nayvoh Tech" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
           <link rel="canonical" href="https://nayvohtech.com/" /> {/* Default for the homepage */}
         </Helmet>
         <Routes>
@@ -30,6 +35,7 @@ const App = () => (
             element={
               <>
                 <Helmet>
+                  <meta name="robots" content="index, follow" />  
                   <link rel="canonical" href="https://nayvohtech.com/" />
                 </Helmet>
                 <Index />
@@ -41,6 +47,7 @@ const App = () => (
             element={
               <>
                 <Helmet>
+                  <meta name="robots" content="index, follow" />
                   <link rel="canonical" href="https://nayvohtech.com/about" />
                 </Helmet>
                 <About />
@@ -52,6 +59,7 @@ const App = () => (
             element={
               <>
                 <Helmet>
+                  <meta name="robots" content="index, follow" />
                   <link rel="canonical" href="https://nayvohtech.com/services" />
                 </Helmet>
                 <Services />
@@ -63,6 +71,7 @@ const App = () => (
             element={
               <>
                 <Helmet>
+                  <meta name="robots" content="index, follow" />
                   <link rel="canonical" href="https://nayvohtech.com/contact" />
                 </Helmet>
                 <Contact />
@@ -74,6 +83,7 @@ const App = () => (
             element={
               <>
                 <Helmet>
+                  <meta name="robots" content="index, follow" />
                   <link rel="canonical" href="https://nayvohtech.com/resources" />
                 </Helmet>
                 <Tools />
@@ -85,6 +95,7 @@ const App = () => (
             element={
               <>
                 <Helmet>
+                  <meta name="robots" content="noindex, nofollow" />
                   <link rel="canonical" href="https://nayvohtech.com/notfound" />
                 </Helmet>
                 <NotFound />
